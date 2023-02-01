@@ -1,0 +1,4 @@
+{
+    "PORT": 5000,
+    "mongooseUrl": "mongodb+srv://admin:Zak_Dummy@cluster0.otgiygd.mongodb.net/?retryWrites=true&w=majority"
+}
