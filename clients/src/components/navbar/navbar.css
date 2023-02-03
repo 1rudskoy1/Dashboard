@@ -1,3 +1,6 @@
+.nav {
+  width: 100px;
+}
 .nav-items {
   display: flex;
   flex-direction: column;

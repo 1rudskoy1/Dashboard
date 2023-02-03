@@ -1,0 +1,36 @@
+.alert {
+  background-color: #4339f2;
+  width: 65%;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.alert-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.alert img {
+  width: 100px;
+  height: 100px;
+}
+.alert-text {
+  margin: 0 15px;
+}
+.alert-text__header {
+  margin-bottom: 0px;
+}
+.alert-text__description {
+  max-width: 525px;
+  line-height: 25px;
+}
+.alert-content__btn {
+  width: 137px;
+  height: 45px;
+  color: #4339f2;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  align-self: flex-end;
+}

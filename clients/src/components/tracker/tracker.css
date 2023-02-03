@@ -1,0 +1,82 @@
+.trackers {
+  display: flex;
+  justify-content: space-between;
+}
+.tracker {
+  width: 30%;
+}
+.tracker-top {
+  display: flex;
+  align-items: center;
+}
+.tracker-top img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.tracker-top__dots {
+  display: flex;
+  justify-content: space-around;
+  width: 25px;
+  height: initial;
+  cursor: pointer;
+}
+.dots-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: block;
+}
+.date-header {
+  margin-bottom: 3px;
+}
+.date-city {
+  color: #999999;
+}
+.tracker-skill__fild {
+  width: 100%;
+  height: 8px;
+  background-color: #e2fbd7;
+  border-radius: 15px;
+  position: relative;
+}
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-header__head {
+  font-size: 14px;
+  font-weight: medium;
+  margin-bottom: 10px;
+}
+.skill-header__text {
+  color: #3baa40;
+}
+.fild-filded {
+  position: absolute;
+  width: 30%;
+  height: 8px;
+  background-color: #3baa40;
+  border-radius: 15px;
+}
+.skills-blue .tracker-skill__fild {
+  background-color: #dad7fe;
+}
+.skills-blue .fild-filded {
+  background-color: #4339f2;
+}
+
+.skills-red .tracker-skill__fild {
+  background-color: #ffe5d3;
+}
+.skills-red .fild-filded {
+  background-color: #ff3a29;
+}
