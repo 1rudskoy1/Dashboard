@@ -4,8 +4,10 @@ const config = require('config');
 const PORT = process.env.PORT || config.get('PORT');
 const app = express();
 const authRouters = require('./routers/auth.routers');
+const skillsRoutes = require('./routers/skills.routers');
 
 app.use('/api/auth', authRouters);
+app.use('/api/skills', skillsRoutes);
 
 const start = async() => {
     try{
