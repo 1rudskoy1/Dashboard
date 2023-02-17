@@ -4,14 +4,15 @@ import Navbar from "./navbar/Navbar"
 import Main from "../layout/Main";
 import Skills from "../layout/Skills";
 import "./app.css"
+
 function App() {
-    return (
+  return (
         <BrowserRouter>
           <div className="app">
               <Navbar />
               <Routes>
                   <Route path = "/" element = {<Main/>}></Route>
-                  <Route path = "/skills" element = {<Skills/>}></Route>
+                  <Route path = "api/skills/all" element = {<Skills/>}></Route>
               </Routes>
           </div>
         </BrowserRouter>

@@ -2,3 +2,13 @@
   display: flex;
   justify-content: space-between;
 }
+#canvas {
+  border: 1px solid black;
+}
+.skills-table {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  justify-content: center;
+  width: 100%;
+}
