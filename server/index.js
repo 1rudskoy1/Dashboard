@@ -3,9 +3,14 @@ const mongoose = require('mongoose');
 const config = require('config');
 const PORT = process.env.PORT || config.get('PORT');
 const app = express();
+var bodyParser = require('body-parser')
 const authRouters = require('./routers/auth.routers');
 const skillsRoutes = require('./routers/skills.routers');
+const cors = require('cors')
+app.use(cors())
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/auth', authRouters);
 app.use('/api/skills', skillsRoutes);
 
