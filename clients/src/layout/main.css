@@ -46,3 +46,35 @@
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
+.cabinet {
+  width: 100%;
+  margin-top: 100px;
+}
+.cabinet-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.cabinet-info__input {
+  margin-top: 5px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.cabinet-info__img {
+  width: 311px;
+  height: 274px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-image: url(../assets/img/user-icon-png-7.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.cabinet-info__btn {
+  margin: 0 auto;
+}
+#cabinet-info__file {
+  opacity: 0;
+}

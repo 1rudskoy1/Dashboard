@@ -5,6 +5,7 @@ const User = new Schema({
     name: {type: String, required: true},
     password: {type: String, required: true},
     avatar: {type: String},
+    activationLink: {type: String},
     skills: [{type: ObjectId}]
 })
 

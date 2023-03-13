@@ -6,13 +6,17 @@ const app = express();
 var bodyParser = require('body-parser')
 const authRouters = require('./routers/auth.routers');
 const skillsRoutes = require('./routers/skills.routers');
+const changeRoutes = require('./routers/change.routers');
+const cookieParser = require('cookie-parser');
 const cors = require('cors')
 app.use(cors())
 
 app.use(bodyParser.json());
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/auth', authRouters);
 app.use('/api/skills', skillsRoutes);
+app.use('/api/change', changeRoutes);
 
 const start = async() => {
     try{

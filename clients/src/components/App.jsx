@@ -5,6 +5,7 @@ import Main from "../layout/Main";
 import Skills from "../layout/Skills";
 import Auth from "../layout/Auth";
 import Registr from "../layout/Registration";
+import Cabinet from "../layout/Cabinet"
 import "./app.css"
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
               <Routes>
                   <Route path = "/" element = {<Main/>}></Route>
                   <Route path = "api/skills/all" element = {<Skills/>}></Route>
+                  <Route path = "api/skills/cabinet" element = {<Cabinet/>}></Route>
                   <Route path = "api/auth/auth" element = {<Auth/>}></Route>
                   <Route path = "api/auth/registration" element = {<Registr/>}></Route>
               </Routes>
